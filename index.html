@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Luxury Jewelry Store</h1>
+        <p>Discover our exquisite collection of rings and jewels</p>
+    </div>
+
+    <div class="category-selection">
+        <h2>Select your ring specifications:</h2>
+        <form id="ringForm">
+            <label for="goldType">Gold Type:</label>
+            <select id="goldType">
+                <option value="yellow">Yellow Gold</option>
+                <option value="white">White Gold</option>
+                <option value="rose">Rose Gold</option>
+            </select>
+
+            <label for="carat">Carat Size:</label>
+            <input type="number" id="carat" min="0.5" max="5" step="0.1" value="1.5" />
+
+            <label for="cut">Stone Cut:</label>
+            <select id="cut">
+                <option value="round">Round</option>
+                <option value="princess">Princess</option>
+                <option value="oval">Oval</option>
+                <option value="marquise">Marquise</option>
+                <option value="emerald">Emerald</option>
+            </select>
+
+            <label for="clarity">Diamond Clarity:</label>
+            <select id="clarity">
+                <option value="d-vvs1">D-VVS1</option>
+                <option value="e-vvs2">E-VVS2</option>
+                <option value="f-vs1">F-VS1</option>
+            </select>
+
+            <label for="diamondType">Diamond Type:</label>
+            <select id="diamondType">
+                <option value="natural">Natural Diamond</option>
+                <option value="lab">Lab-Grown Diamond</option>
+            </select>
+
+            <button type="submit">Show Jewelry</button>
+        </form>
+    </div>
+
+    <div class="jewelry-display">
+        <h2>Your Selected Jewelry:</h2>
+        <div id="jewelryImage">
+            <img src="images/placeholder.jpg" alt="Selected Jewelry" />
+        </div>
+        <p id="jewelryDescription">Choose your specifications to see the jewelry.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
